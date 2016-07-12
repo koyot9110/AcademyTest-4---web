@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang = 'sk'>
+<head>
+	<meta charset="UTF-8">
+	<title>Dubinne</title>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media = "print">
+	<link rel="stylesheet" type="text/css" href="css/screen.css" media = "screen">
+</head>
+<body>
+	<img src="img/dubinne.png" height="250" width="700" alt="Smiley face"/>
+
+	<div class="ref">
+		<a href="index.html">Domov</a>
+		<a href="historia.html">Historia</a>
+		<a href="fs.html">Folklorny subor Dubincan</a>
+		<a href="zs.html">Zakladne informacie</a>
+		<a href="zzp.html">Zoznam zvolenych poslancov</a>
+		<a href="uh.html">Uradne hodiny</a>
+		<a href="anketa.html">Anketa</a>
+		<a href="pocasie.html">Pocasie</a>
+		<a href="tlac.html">Tlac</a>
+	</div>
+
+	<form id="frmArt" method="post" action="badProcessing.html">
+		<div class = "anketa">
+			<label for="title">Autor clanku:</label>
+			<br>
+			<input type="text" name="author" id="author" size="50"/>
+			<br>
+
+			<label for="vekElm">Vek:</label>
+			<br>
+			<input type="number" id="vekElm" name="vek" min="0" max="150" />
+			<br>
+
+			<select id="pohlavieElm" name="pohlavie"  size="1">
+				<option value="m">muž </option>
+				<option value="f">žena </option>
+			</select>
+			<br>
+
+			<label for="title">Názov clanku:</label>
+			<br>
+			<input type="text" name="title" id="title" size="50"  maxlength="100" pattern="\S[\S\s]*" required title="Názov článku. Povinná položka. Maximálna dĺžka: 100 znakov. Prvý znak nesmie byť medzera." placeholder="Nazov clanku"/>
+			<br>
+
+			<label for="content">Text článku:</label>
+			<br>
+			<textarea name="content" id="content" spellcheck="true" lang="sk" cols="52" rows="10" required title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html." placeholder="Obsah clanku"></textarea>
+			<br>
+			<br>
+
+			<label for="nalada2Elm">Dnes sa mám:</label>
+			<input type="radio" id="nalada2Elm" name="nalada"  value="2" checked/>
+			<label for="nalada2Elm">dobre</label>
+			<input type="radio" id="nalada1Elm" name="nalada"  value="1"/>
+			<label for="nalada1Elm">zle</label>
+			<input type="radio" id="nalada0Elm" name="nalada"  value="0"/>
+			<label for="nalada0Elm">radšej ani nehovorím.</label>
+			<br>
+			<br>
+
+			<label for="jedlo1Elm">Už som jedol:</label>
+			<input type="checkbox" id="jedlo1Elm" name="jedloR"/>
+			<label for="jedlo1Elm">raňajky</label>
+			<input type="checkbox" id="jedlo2Elm" name="jedloO"/>
+			<label for="jedlo2Elm">obed</label>
+			<input type="checkbox" id="jedlo3Elm" name="jedloV"/>
+			<label for="jedlo3Elm">večeru.</label>
+			<br>
+			<br>
+
+			<button type="submit">
+				Ulož článok
+			</button>
+
+		</div>
+	</form>
+
+
+	<div class = "odkazy">
+		<hr>
+		<p><a href="http://www.dubinne.sk/" target="_blank">Oficialna stranka Dubinne</a></p>
+		<p><a href="http://www.dubinne.sk/Foto-Dubinne/index.html" target="_blank">Odkaz na fotogaleriu</a></p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="js/dubinne.js"></script>
+
+</body>
+</html>

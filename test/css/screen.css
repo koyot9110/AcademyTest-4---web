@@ -1,0 +1,69 @@
+section > h2 {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 0.5rem;
+	margin-top: 0.88rem;
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section > div {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 69%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+	background-image: url("../img/green.png");
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 35rem;
+	max-width: 75rem; 
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	padding-right: 10%;
+	color: #238246;
+}
+
+h2 {
+	padding-right: 3%;
+	color: #094A0D;
+}
+
+h3 {
+	color: #025922;
+}
+
+table {
+	width: 35rem;
+	text-align: center;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+div.anketa, div.odkazy, div.pocasie {
+	text-align: center;
+}
+
+div.ref {
+	vertical-align: top;
+	text-align: center;
+}
+
+div.container {
+	text-align: center;
+}

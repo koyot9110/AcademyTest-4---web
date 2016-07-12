@@ -1,0 +1,34 @@
+section > h3 {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 0.5rem;
+	margin-top: 0.88rem;
+	width: 25%;
+}
+
+section > div {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 75%;
+}
+
+table {
+	width: 80%;
+	text-align: center;
+}
+
+div.odkazy, div.anketa, div.ref {
+	visibility: hidden;
+}
+
+table {
+	border: double;
+}
+
+body {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
